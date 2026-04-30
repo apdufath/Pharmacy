@@ -24,7 +24,7 @@ if (isset($_GET['delete'])) {
     header("Location: medicines.php");
     exit();
 }
-?>
+?> 
 
 <div class="page-header">
     <h1>Medicines Inventory</h1>
