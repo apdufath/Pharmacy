@@ -6,7 +6,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <img src="assets/img/logo.png" alt="Pharmacy Logo" class="logo-img">  
         <h2 style="background: -webkit-linear-gradient(45deg, #00e5ff, #ff00cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Neon Pharma</h2>
     </div>
-    <ul class="nav-links">
+    <ul class="nav-links">  
         <li><a href="index.php" class="<?php echo $currentPage == 'index.php' ? 'active' : ''; ?>"><i class="fas fa-home"></i> Dashboard</a></li>
         <li><a href="medicines.php" class="<?php echo $currentPage == 'medicines.php' || $currentPage == 'edit_medicine.php' ? 'active' : ''; ?>"><i class="fas fa-pills"></i> Medicines</a></li>
         <li><a href="sales.php" class="<?php echo $currentPage == 'sales.php' ? 'active' : ''; ?>"><i class="fas fa-shopping-cart"></i> Sales</a></li>
