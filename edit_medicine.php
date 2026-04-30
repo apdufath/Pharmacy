@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['edit_medicine'])) {
 
 $stmt = $conn->prepare("SELECT * FROM medicines WHERE id=?");
 $stmt->execute([$id]);
-$medicine = $stmt->fetch(PDO::FETCH_ASSOC);
+$medicine = $stmt->fetch(PDO::FETCH_ASSOC); 
 if (!$medicine) {
     header("Location: medicines.php");
     exit();
