@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_sale'])) {
         if ($medicine['stock'] >= $quantity) {
             $total_price = $medicine['price'] * $quantity;
 
-            // Start transaction
+            // Start transaction 
             $conn->beginTransaction();
             try {
                 // Insert sale
