@@ -14,7 +14,7 @@ try {
     $total_sales = 0;
 }
 ?>
-
+ 
 <div class="page-header">
     <h1>Dashboard Overview</h1>
     <a href="sales.php" class="btn"><i class="fas fa-plus"></i> New Sale</a>
