@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_warehouse'])) {
 <div class="page-header">
     <h1>Warehouse & Suppliers</h1>
 </div>
-
+ 
 <div class="flex-row">
     <div class="flex-col glass" style="padding: 2rem;"> 
         <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Receive New Stock</h3>
