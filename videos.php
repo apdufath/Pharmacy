@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_video'])) {
 ?>
 
 <div class="page-header">
-    <h1>Educational Videos</h1>
+    <h1>Educational Videos</h1> 
 </div>
 
 <div class="flex-row">
