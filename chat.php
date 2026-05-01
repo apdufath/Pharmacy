@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_msg'])) {
     header("Location: chat.php");
     exit();
 }
-?>
+?> 
 <style> 
 .chat-container {
     height: 400px;
