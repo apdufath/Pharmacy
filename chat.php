@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<?php
+<?php 
 $user = $_SESSION['username'];
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_msg'])) {
     $msg = $_POST['message']; 
