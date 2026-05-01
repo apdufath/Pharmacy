@@ -2,7 +2,7 @@
  
 <?php
 // Fetch stats
-try {
+try { 
     $total_medicines = $conn->query("SELECT COUNT(*) FROM medicines")->fetchColumn();
     $low_stock = $conn->query("SELECT COUNT(*) FROM medicines WHERE stock < 20")->fetchColumn();
     $total_sales = $conn->query("SELECT SUM(total_price) FROM sales")->fetchColumn();
