@@ -8,7 +8,7 @@ try {
     $total_sales = $conn->query("SELECT SUM(total_price) FROM sales")->fetchColumn();
     $total_sales = $total_sales ? $total_sales : 0;
 } catch (Exception $e) { 
-    // Graceful fallback
+    // Graceful fallbackk
     $total_medicines = 0;
     $low_stock = 0;
     $total_sales = 0;

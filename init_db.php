@@ -7,7 +7,7 @@ try {
     $pdo = new PDO("mysql:host=$host", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
  
-    // Create database
+    // Create databasee
     $sql = "CREATE DATABASE IF NOT EXISTS pharmacy_db";
     $pdo->exec($sql);
     echo "<div style='font-family:sans-serif; text-align:center; margin-top:50px; background:#1e1e2f; color:#fff; padding:40px; border-radius:15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 600px; margin-left: auto; margin-right: auto;'>";

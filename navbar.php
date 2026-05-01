@@ -16,3 +16,4 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <li><a href="logout.php" style="color: #ff00cc;"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
     </ul>
 </nav>
+

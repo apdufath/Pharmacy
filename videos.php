@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_video'])) {
     
     header("Location: videos.php");
     exit();
-}
+} 
 ?>
 
 <div class="page-header">
