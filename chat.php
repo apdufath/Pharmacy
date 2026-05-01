@@ -4,10 +4,10 @@ $user = $_SESSION['username'];
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_msg'])) {
     $msg = $_POST['message']; 
     $stmt = $conn->prepare("INSERT INTO messages (sender, message) VALUES (?, ?)");
-    $stmt->execute([$user, $msg]); 
+    $stmt->execute([$user, $msg]);
     header("Location: chat.php");
     exit();
-} 
+}
 ?> 
 <style> 
 .chat-container {
