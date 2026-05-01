@@ -7,7 +7,7 @@ try {
     $low_stock = $conn->query("SELECT COUNT(*) FROM medicines WHERE stock < 20")->fetchColumn();
     $total_sales = $conn->query("SELECT SUM(total_price) FROM sales")->fetchColumn();
     $total_sales = $total_sales ? $total_sales : 0;
-} catch (Exception $e) {
+} catch (Exception $e) { 
     // Graceful fallback
     $total_medicines = 0;
     $low_stock = 0;
