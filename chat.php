@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <?php 
-$user = 'Admin'; // Hardcoded user since login is removed
+$user = isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest'; // Use logged in user or fallback to Guest
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_msg'])) {
     $msg = $_POST['message']; 
     $stmt = $conn->prepare("INSERT INTO messages (sender, message) VALUES (?, ?)");
