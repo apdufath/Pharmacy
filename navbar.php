@@ -13,7 +13,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <li><a href="warehouse.php" class="<?php echo $currentPage == 'warehouse.php' ? 'active' : ''; ?>"><i class="fas fa-warehouse"></i> Warehouse</a></li>
         <li><a href="chat.php" class="<?php echo $currentPage == 'chat.php' ? 'active' : ''; ?>"><i class="fas fa-comments"></i> Chat</a></li>
         <li><a href="videos.php" class="<?php echo $currentPage == 'videos.php' ? 'active' : ''; ?>"><i class="fas fa-video"></i> Videos</a></li>
-        <li><a href="logout.php" style="color: #ff00cc;"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
     </ul>
 </nav>
 
