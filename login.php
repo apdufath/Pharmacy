@@ -5,7 +5,7 @@ require_once 'db.php';
 if (isset($_SESSION['user_id'])) {
     header("Location: index.php");
     exit();
-}
+} 
 
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
