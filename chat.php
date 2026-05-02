@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_msg'])) {
 }
 ?> 
 <style> 
-.chat-container {
+.chat-container { 
     height: 400px;
     overflow-y: auto;
     padding: 20px;
