@@ -16,7 +16,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <?php if (isset($_SESSION['user_id'])): ?>
             <li><a href="logout.php" style="color: #ff00cc;"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         <?php else: ?>
-            <li><a href="login.php" style="color: #00ff88;"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li><a href="login.php" style="color: #00ff88;"><i class="fas fa-sign-in-alt"></i> Login</a></li> 
         <?php endif; ?>
     </ul>
 </nav>
