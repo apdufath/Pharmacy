@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_sale'])) {
     $medicine = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($medicine) {
-        if ($medicine['stock'] >= $quantity) {
+        if ($medicine['stock'] >= $quantity) { 
             $total_price = $medicine['price'] * $quantity;
 
             // Start transaction 
