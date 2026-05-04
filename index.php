@@ -11,7 +11,7 @@ try {
     // Graceful fallbackk
     $total_medicines = 0;
     $low_stock = 0;
-    $total_sales = 0;
+    $total_sales = 0; 
 }
 ?>
  
