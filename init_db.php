@@ -13,7 +13,7 @@ try {
     echo "<div style='font-family:sans-serif; text-align:center; margin-top:50px; background:#1e1e2f; color:#fff; padding:40px; border-radius:15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 600px; margin-left: auto; margin-right: auto;'>";
     echo "<h2 style='color: #00e5ff;'>Database Initialization</h2>";
     echo "<p style='color: #a0a0b0;'>Database created successfully ✓</p>";
-
+ 
     $pdo->exec("USE pharmacy_db");
 
     // Create users table
