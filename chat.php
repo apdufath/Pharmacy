@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_msg'])) {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
+} 
 .chat-bubble {
     padding: 10px 15px;
     border-radius: 20px;
