@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_medicine'])) {
 // Handle deletion
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-    $stmt = $conn->prepare("DELETE FROM medicines WHERE id = ?");
+    $stmt = $conn->prepare("DELETE FROM medicines WHERE id = ?"); 
     $stmt->execute([$id]);
     header("Location: medicines.php");
     exit();
