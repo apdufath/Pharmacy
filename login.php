@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     try {
         $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
-        $stmt->execute([$username]);  
+        $stmt->execute([$username]);   
         $user = $stmt->fetch();
 
         if ($user && password_verify($password, $user['password'])) { 
