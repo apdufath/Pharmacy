@@ -14,7 +14,7 @@ try {
              <p>Please run the <a href='init_db.php' style='color:#00e5ff;'>Database Initialization Script</a> first.</p>
              </div>");
     } else {
-        die("Connection failed: " . $e->getMessage());
+        die("Connection failed: " . $e->getMessage()); 
     }
 }
 ?> 
