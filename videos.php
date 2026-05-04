@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_video'])) {
 
     $stmt = $conn->prepare("INSERT INTO videos (title, url) VALUES (?, ?)");
     $stmt->execute([$title, $embed_url]);
-    
+     
     header("Location: videos.php");
     exit();
 } 
