@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_warehouse'])) {
     header("Location: warehouse.php");
     exit(); 
 } 
-?>
+?> 
  
 <div class="page-header">
     <h1>Warehouse & Suppliers</h1> 
