@@ -10,7 +10,7 @@ try {
 } catch (Exception $e) { 
     // Graceful fallbackk
     $total_medicines = 0;
-    $low_stock = 0;
+    $low_stock = 0; 
     $total_sales = 0; 
 }
 ?>
