@@ -15,7 +15,7 @@ try {
     echo "<p style='color: #a0a0b0;'>Database created successfully ✓</p>";
  
     $pdo->exec("USE pharmacy_db");
-
+ 
     // Create users table
     $pdo->exec("CREATE TABLE IF NOT EXISTS users (
         id INT(11) AUTO_INCREMENT PRIMARY KEY,
