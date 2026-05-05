@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_warehouse'])) {
     exit();  
 }    
 ?> 
- 
+  
 <div class="page-header">
     <h1>Warehouse & Suppliers</h1> 
 </div>
