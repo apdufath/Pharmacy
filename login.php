@@ -10,7 +10,7 @@ if (isset($_SESSION['user_id'])) {
 $error = ''; 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = $_POST['password']; 
 
     try {
         $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
