@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_warehouse'])) {
     $stmt->execute([$item_name, $supplier, $qty, $date]);
     
     header("Location: warehouse.php");
-    exit();  
+    exit();   
 }    
 ?> 
   
