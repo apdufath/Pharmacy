@@ -6,7 +6,7 @@ if (!$id) {
     exit();   
 }  
 
-// Handle form submission  
+// Handle form submission   
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['edit_medicine'])) {
     $name = $_POST['name'];
     $category = $_POST['category'];
