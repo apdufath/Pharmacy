@@ -68,3 +68,5 @@ if (!$medicine) {
 </div>
 
 <?php include 'footer.php'; ?>
+<!-- Abdifatah Bashe  -->
+
