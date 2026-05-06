@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['edit_medicine'])) {
     $category = $_POST['category'];
     $price = $_POST['price'];
     $stock = $_POST['stock'];
-    $expiry = $_POST['expiry_date']; 
+    $expiry = $_POST['expiry_date'];  
 
     $stmt = $conn->prepare("UPDATE medicines SET name=?, category=?, price=?, stock=?, expiry_date=? WHERE id=?");
     $stmt->execute([$name, $category, $price, $stock, $expiry, $id]);
