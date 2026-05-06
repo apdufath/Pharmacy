@@ -5,7 +5,7 @@ if (!$id) {
     header("Location: medicines.php");
     exit();   
 }  
-//jjnnjn
+//jjn
 // Handle form submission   
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['edit_medicine'])) {
     $name = $_POST['name'];
