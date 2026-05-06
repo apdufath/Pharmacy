@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<?php
+<?php 
 $id = $_GET['id'] ?? null;
 if (!$id) {
     header("Location: medicines.php");
