@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['edit_medicine'])) {
     $stmt = $conn->prepare("UPDATE medicines SET name=?, category=?, price=?, stock=?, expiry_date=? WHERE id=?");
     $stmt->execute([$name, $category, $price, $stock, $expiry, $id]);
 
-    header("Location: medicines.php");
+    header("Location: medicines.php"); 
     exit();
 }
 
