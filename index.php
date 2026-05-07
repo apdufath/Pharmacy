@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
  
 <?php
-// Fetch stats  
+// Fetch stats   
 try { 
     $total_medicines = $conn->query("SELECT COUNT(*) FROM medicines")->fetchColumn();
     $low_stock = $conn->query("SELECT COUNT(*) FROM medicines WHERE stock < 20")->fetchColumn();
