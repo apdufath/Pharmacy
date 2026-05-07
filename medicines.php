@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_medicine'])) {
  
     $stmt = $conn->prepare("INSERT INTO medicines (name, category, price, stock, expiry_date) VALUES (?, ?, ?, ?, ?)");
     $stmt->execute([$name, $category, $price, $stock, $expiry]);
-     
+      
     // Redirect to prevent form resubmissionn
     header("Location: medicines.php");
     exit();
