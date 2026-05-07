@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_medicine'])) {
     $name = $_POST['name'];
     $category = $_POST['category'];
     $price = $_POST['price'];
-    $stock = $_POST['stock'];
+    $stock = $_POST['stock']; 
     $expiry = $_POST['expiry_date'];
  
     $stmt = $conn->prepare("INSERT INTO medicines (name, category, price, stock, expiry_date) VALUES (?, ?, ?, ?, ?)");
