@@ -1,6 +1,6 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
-?>
+?> 
 <nav class="navbar glass"> 
     <div class="logo-container">
         <img src="assets/img/logo.png" alt="Pharmacy Logo" class="logo-img">  
