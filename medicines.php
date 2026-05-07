@@ -3,7 +3,7 @@
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_medicine'])) {
     $name = $_POST['name'];
-    $category = $_POST['category'];
+    $category = $_POST['category']; 
     $price = $_POST['price'];
     $stock = $_POST['stock']; 
     $expiry = $_POST['expiry_date']; 
