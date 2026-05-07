@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_medicine'])) {
     // Redirect to prevent form resubmissionn
     header("Location: medicines.php");
     exit();
-}
+} 
 
 // Handle deletion 
 if (isset($_GET['delete'])) {
