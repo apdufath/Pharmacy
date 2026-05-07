@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_msg'])) {
     background: rgba(0,0,0,0.3);  
     border-radius: 10px; 
     margin-bottom: 20px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     gap: 15px;
 } 
