@@ -3,7 +3,7 @@
 $id = $_GET['id'] ?? null; 
 if (!$id) {
     header("Location: medicines.php");
-    exit();    
+    exit();
 }
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['edit_medicine'])) {
