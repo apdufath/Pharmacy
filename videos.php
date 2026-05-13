@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_video'])) {
     $title = $_POST['title'];
     $url = $_POST['url'];
     
-    // Extract youtube ID if it's a youtube link
+    // Extract youtube ID if it's a youtube link 
     $embed_url = $url;
     if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i', $url, $match)) {
         $embed_url = "https://www.youtube.com/embed/" . $match[1];
