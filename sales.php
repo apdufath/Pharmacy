@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <?php
-// Handle form submission
+// Handle form submission 
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_sale'])) {
     $medicine_id = $_POST['medicine_id'];
