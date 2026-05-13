@@ -1,7 +1,7 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
 ?> 
-<nav class="navbar glass"> 
+<nav class="navbar glass">  
     <div class="logo-container"> 
         <img src="assets/img/logo.png" alt="Pharmacy Logo" class="logo-img">  
         <h2 style="background: -webkit-linear-gradient(45deg, #00e5ff, #ff00cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Neon Pharma</h2>
