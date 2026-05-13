@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_warehouse'])) {
     $item_name = $_POST['item_name'];
     $supplier = $_POST['supplier'];
     $qty = $_POST['quantity'];
-    $date = $_POST['arrival_date'];   
+    $date = $_POST['arrival_date'];    
 
     $stmt = $conn->prepare("INSERT INTO warehouse (item_name, supplier, quantity_received, arrival_date) VALUES (?, ?, ?, ?)");
     $stmt->execute([$item_name, $supplier, $qty, $date]);
