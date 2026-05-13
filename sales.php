@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_sale'])) {
     $medicine_id = $_POST['medicine_id'];
     $quantity = $_POST['quantity'];
 
-    // Get medicine detailss
+    // Get medicine detailss 
     $stmt = $conn->prepare("SELECT price, stock FROM medicines WHERE id = ?");
     $stmt->execute([$medicine_id]);
     $medicine = $stmt->fetch(PDO::FETCH_ASSOC);
